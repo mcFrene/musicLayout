@@ -36,7 +36,7 @@ const scss = (isBuild) => {
             .pipe(plugins.if(isBuild, plugins.replace(/\.jpeg/g, '.webp')))
 
             /** Группировка медиа-запросов только для production */
-            .pipe(plugins.if(isBuild, groupMediaQueries()))
+            //.pipe(plugins.if(isBuild, groupMediaQueries()))
 
             //.pipe(plugins.if(isBuild, webpCss(webpConfig))) ???
             .pipe(
