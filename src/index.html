@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html')
+<body>
+  <!-- header -->
+  <header>
+    <section class="section-inner">
+        <nav class="header-nav">
+            <a href="" class="header-nav__link">Homepage</a>
+            <a href="" class="header-nav__link">Last Albums</a>
+            <a href="" class="header-nav__link">Concerts</a>
+            <a href="" class="header-nav__link">New Albums</a>
+            <a href="" class="header-nav__link">Shop</a>
+            <a href="" class="header-nav__link">Videos</a>
+            <a href="" class="header-nav__link">Gallery</a>
+        </nav>
+        <div class="socials header-socials">
+            <div class="socials__item">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2273 0C7.44971 0 7.10143 0.0115116 6.01058 0.0601777C4.92201 0.108725 4.17855 0.277786 3.52802 0.525007C2.85549 0.780524 2.28514 1.12246 1.71653 1.67839C1.14797 2.23436 0.798263 2.79203 0.536939 3.44962C0.284099 4.08569 0.111196 4.81263 0.0615454 5.87701C0.0117732 6.94362 0 7.28416 0 10C0 12.7158 0.0117732 13.0564 0.0615454 14.123C0.111196 15.1874 0.284099 15.9143 0.536939 16.5504C0.798263 17.208 1.14797 17.7656 1.71653 18.3216C2.28514 18.8775 2.85549 19.2195 3.52802 19.475C4.17855 19.7222 4.92201 19.8913 6.01058 19.9398C7.10143 19.9885 7.44971 20 10.2273 20C13.0048 20 13.3531 19.9885 14.444 19.9398C15.5325 19.8913 16.276 19.7222 16.9265 19.475C17.5991 19.2195 18.1694 18.8775 18.738 18.3216C19.3066 17.7656 19.6563 17.208 19.9176 16.5504C20.1704 15.9143 20.3433 15.1874 20.393 14.123C20.4428 13.0564 20.4545 12.7158 20.4545 10C20.4545 7.28416 20.4428 6.94362 20.393 5.87701C20.3433 4.81263 20.1704 4.08569 19.9176 3.44962C19.6563 2.79203 19.3066 2.23436 18.738 1.67839C18.1694 1.12246 17.5991 0.780524 16.9265 0.525007C16.276 0.277786 15.5325 0.108725 14.444 0.0601777C13.3531 0.0115116 13.0048 0 10.2273 0ZM10.2273 1.8018C12.9581 1.8018 13.2815 1.812 14.36 1.86011C15.3571 1.90457 15.8986 2.06748 16.259 2.20443C16.7364 2.38583 17.0771 2.60253 17.435 2.95248C17.7929 3.30239 18.0145 3.63551 18.2 4.10229C18.3401 4.45466 18.5067 4.98415 18.5522 5.95914C18.6014 7.0136 18.6118 7.32989 18.6118 10C18.6118 12.6701 18.6014 12.9864 18.5522 14.0409C18.5067 15.0158 18.3401 15.5453 18.2 15.8977C18.0145 16.3645 17.7929 16.6976 17.435 17.0475C17.0771 17.3975 16.7364 17.6142 16.259 17.7956C15.8986 17.9325 15.3571 18.0954 14.36 18.1399C13.2817 18.188 12.9583 18.1982 10.2273 18.1982C7.49628 18.1982 7.17288 18.188 6.09458 18.1399C5.09743 18.0954 4.5559 17.9325 4.19552 17.7956C3.71814 17.6142 3.37745 17.3975 3.01958 17.0475C2.66172 16.6976 2.44006 16.3645 2.25453 15.8977C2.11447 15.5453 1.94785 15.0158 1.90239 14.0409C1.85318 12.9864 1.84275 12.6701 1.84275 10C1.84275 7.32989 1.85318 7.0136 1.90239 5.95914C1.94785 4.98415 2.11447 4.45466 2.25453 4.10229C2.44006 3.63551 2.66168 3.30239 3.01958 2.95248C3.37745 2.60253 3.71814 2.38583 4.19552 2.20443C4.5559 2.06748 5.09743 1.90457 6.09458 1.86011C7.173 1.812 7.49648 1.8018 10.2273 1.8018ZM4.97543 10C4.97543 7.16393 7.32674 4.86487 10.2273 4.86487C13.1278 4.86487 15.4791 7.16393 15.4791 10C15.4791 12.8361 13.1278 15.1351 10.2273 15.1351C7.32674 15.1351 4.97543 12.8361 4.97543 10ZM10.2273 13.3333C8.34447 13.3333 6.81818 11.841 6.81818 10C6.81818 8.15904 8.34447 6.66667 10.2273 6.66667C12.1101 6.66667 13.6364 8.15904 13.6364 10C13.6364 11.841 12.1101 13.3333 10.2273 13.3333ZM15.6866 5.86197C16.3644 5.86197 16.9139 5.32474 16.9139 4.66199C16.9139 3.99924 16.3644 3.46197 15.6866 3.46197C15.0088 3.46197 14.4594 3.99924 14.4594 4.66199C14.4594 5.32474 15.0088 5.86197 15.6866 5.86197Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="socials__item">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4708 20H1.67434C1.05067 20 0.54541 19.5057 0.54541 18.8961V1.10384C0.54541 0.494104 1.05075 0 1.67434 0H19.8711C20.4945 0 21 0.494104 21 1.10384V18.8961C21 19.5057 20.4945 20 19.8711 20H14.6588V12.2549H17.3175L17.7156 9.23649H14.6588V7.30943C14.6588 6.43554 14.9069 5.84 16.1886 5.84L17.8232 5.83931V3.13962C17.5405 3.10284 16.5702 3.02065 15.4412 3.02065C13.0844 3.02065 11.4708 4.4273 11.4708 7.0105V9.23649H8.80526V12.2549H11.4708V20V20Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="socials__item">
+                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.95049 0.321833C3.95049 0.321833 7.37353 0 13.9783 0C20.583 0 23.7173 0.321833 23.7173 0.321833C23.7173 0.321833 26.1197 0.406639 27.0587 2.2293C27.0587 2.2293 27.9977 3.55182 27.9977 10C27.9977 10 28.0542 13.9919 27.6093 16.1141C27.1643 18.2363 26.1818 18.8561 26.1818 18.8561C26.1818 18.8561 25.5515 19.4759 24.1611 19.6449C22.7708 19.8139 18.2624 20 13.9783 20C13.9783 20 6.13547 19.9955 3.49373 19.5531C0.851982 19.1108 0.480864 16.6115 0.480864 16.6115C0.480864 16.6115 -0.60108 10.2848 0.480864 3.39556C0.480864 3.39556 0.794022 0.643733 3.95049 0.321833V0.321833ZM18.8293 9.84375L11.0168 13.6899V5.9976L18.8293 9.84375Z" fill="white"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+  </header>
+  <!-- / header -->
+  <!-- hero -->
+  <section class="section-hero">
+      <div class="logo"><img src="./images/hero-logo.png" alt=""></div>
+      <div class="scroll-down"><button class="scroll-down-btn"><img src="./images/scroll-down-btn.svg" alt=""></button></div>
+  </section>    
+  <!-- / hero -->
+  <!-- last album -->
+  <section class="section-last-album">
+      <div class="shadow-box shadow-box-top"></div>
+      <div class="section-inner section-inner-large">
+          <div class="album-wrapper">
+              <div class="album-wrapper-cover"><img src="./images/last-album-cover.png" alt="" class="album-wrapper-cover-img"></div>
+              <div class="album-wrapper-info">
+                  <h2 class="album-wrapper-info-h">LAST ALBUM</h2>
+                  <div class="album-wrapper-info-name">NIGHT</div>
+                  <div class="album-wrapper-info-author">GOKHAN DEMIREL & SEMIHUN</div>
+                  <div class="album-wrapper-info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales imperdiet dolor, eu laoreet nunc dictum vitae. Vestibulum ante ipsum primis in faucibus or</div>
+                  <div class="album-wrapper-info-platforms">
+                      <div class="album-wrapper-info-platforms__item"><img src="./images/last-album-platforms-itunes.png" alt="" class="album-wrapper-info-platforms__item-img"></div>
+                      <div class="album-wrapper-info-platforms__item"><img src="./images/last-album-platforms-spotify.png" alt="" class="album-wrapper-info-platforms__item-img"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="shadow-box shadow-box-bottom"></div>
+  </section>
+  <!-- / last album -->
+  <!-- concerts -->
+  <section class="section-concerts">
+      <div class="section-inner">
+          <h1 class="concerts-h">CONCERTS</h1>
+          <div class="concerts-logo"><img src="./images/concerts-logo.png" alt="" class="conscerts-logo-img"></div>
+          <div class="concerts-wrapper">
+              <div class="concerts-wrapper__item">
+                  <div class="concerts-wrapper__item-date">
+                      <div class="concerts-wrapper__item-date-day">23</div>
+                      <div class="concerts-wrapper__item-date-month">JAN</div>
+                  </div>
+                  <div class="concerts-wrapper__item-cover"><img src="./images/concerts-cover-1.png" alt="" class="concerts-wrapper__item-cover-img"></div>
+                  <div class="concerts-wrapper__item-place">
+                      <div class="concerts-wrapper__item-place-ivent">GDAD Festival</div>
+                      <div class="concerts-wrapper__item-place-arena">Jolly Joker</div>
+                  </div>
+                  <div class="concerts-wrapper__item-location">
+                      <img src="./images/concerts-geo-icon.svg" alt="" class="concerts-wrapper__item-location-icon">
+                      <div class="concerts-wrapper__item-location-text">Kadlköy, İstanbul</div>
+                  </div>
+                  <div class="concerts-wrapper__item-time">
+                      <img src="./images/concerts-clock-icon.svg" alt="" class="concerts-wrapper__item-time-icon">
+                      <div class="concerts-wrapper__item-time-text">14:00 AM</div>
+                  </div>
+                  <a href="#" class="concerts-wrapper__item-ticket">TICKET</a>
+              </div>
+              <div class="concerts-wrapper__item">
+                  <div class="concerts-wrapper__item-date">
+                      <div class="concerts-wrapper__item-date-day">12</div>
+                      <div class="concerts-wrapper__item-date-month">FEB</div>
+                  </div>
+                  <div class="concerts-wrapper__item-cover"><img src="./images/concerts-cover-2.png" alt="" class="concerts-wrapper__item-cover-img"></div>
+                  <div class="concerts-wrapper__item-place">
+                      <div class="concerts-wrapper__item-place-ivent">Yapma N'Olursun</div>
+                      <div class="concerts-wrapper__item-place-arena">Hayal Kahvesi</div>
+                  </div>
+                  <div class="concerts-wrapper__item-location">
+                      <img src="./images/concerts-geo-icon.svg" alt="" class="concerts-wrapper__item-location-icon">
+                      <div class="concerts-wrapper__item-location-text">Gebze, Kocaeli</div>
+                  </div>
+                  <div class="concerts-wrapper__item-time">
+                      <img src="./images/concerts-clock-icon.svg" alt="" class="concerts-wrapper__item-time-icon">
+                      <div class="concerts-wrapper__item-time-text">14:00 AM</div>
+                  </div>
+                  <a href="#" class="concerts-wrapper__item-ticket">TICKET</a>
+              </div>
+              <div class="concerts-wrapper__item">
+                  <div class="concerts-wrapper__item-date">
+                      <div class="concerts-wrapper__item-date-day">30</div>
+                      <div class="concerts-wrapper__item-date-month">MAY</div>
+                  </div>
+                  <div class="concerts-wrapper__item-cover"><img src="./images/concerts-cover-3.png" alt="" class="concerts-wrapper__item-cover-img"></div>
+                  <div class="concerts-wrapper__item-place">
+                      <div class="concerts-wrapper__item-place-ivent">Ege Fest</div>
+                      <div class="concerts-wrapper__item-place-arena">Cocktail Fest Izmir Arena</div>
+                  </div>
+                  <div class="concerts-wrapper__item-location">
+                      <img src="./images/concerts-geo-icon.svg" alt="" class="concerts-wrapper__item-location-icon">
+                      <div class="concerts-wrapper__item-location-text">Konak, Izmir</div>
+                  </div>
+                  <div class="concerts-wrapper__item-time">
+                      <img src="./images/concerts-clock-icon.svg" alt="" class="concerts-wrapper__item-time-icon">
+                      <div class="concerts-wrapper__item-time-text">14:00 AM</div>
+                  </div>
+                  <a href="#" class="concerts-wrapper__item-ticket">TICKET</a>
+              </div>
+              <div class="concerts-wrapper__item">
+                  <div class="concerts-wrapper__item-date">
+                      <div class="concerts-wrapper__item-date-day">03</div>
+                      <div class="concerts-wrapper__item-date-month">JUL</div>
+                  </div>
+                  <div class="concerts-wrapper__item-cover"><img src="./images/concerts-cover-4.png" alt="" class="concerts-wrapper__item-cover-img"></div>
+                  <div class="concerts-wrapper__item-place">
+                      <div class="concerts-wrapper__item-place-ivent">Akustik Takilmacalart</div>
+                      <div class="concerts-wrapper__item-place-arena">Dorock XL</div>
+                  </div>
+                  <div class="concerts-wrapper__item-location">
+                      <img src="./images/concerts-geo-icon.svg" alt="" class="concerts-wrapper__item-location-icon">
+                      <div class="concerts-wrapper__item-location-text">Besiktas, Istanbul</div>
+                  </div>
+                  <div class="concerts-wrapper__item-time">
+                      <img src="./images/concerts-clock-icon.svg" alt="" class="concerts-wrapper__item-time-icon">
+                      <div class="concerts-wrapper__item-time-text">14:00 AM</div>
+                  </div>
+                  <a href="#" class="concerts-wrapper__item-ticket">TICKET</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- / concerts -->
+  <!-- albums -->
+  <section class="section-albums">
+      <div class="section-inner">
+            <h1 class="albums-h">ALBUMS</h1>
+            <div class="arrows-wrapper">
+                <div class="albums-swiper">
+                    <div class="albums-wrapper swiper-wrapper">
+                            <div class="albums-wrapper__item albums-wrapper__item--active swiper-slide">
+                                <div class="albums-wrapper__item-cover"><img src="./images/albums-cover-1.png" alt="" class="albums-wrapper__item-cover-img"></div>
+                                <div class="albums-wrapper__item-title">Night</div>
+                                <div class="albums-wrapper__item-author">GDAD</div>
+                                <div class="albums-wrapper__item-play">Playing…</div>
+                            </div>
+                            <div class="albums-wrapper__item swiper-slide">
+                                <div class="albums-wrapper__item-cover"><img src="./images/albums-cover-2.png" alt="" class="albums-wrapper__item-cover-img"></div>
+                                <div class="albums-wrapper__item-title">No More</div>
+                                <div class="albums-wrapper__item-author">GDAD</div>
+                                <div class="albums-wrapper__item-play">Playing…</div>
+                            </div>
+                            <div class="albums-wrapper__item swiper-slide">
+                                <div class="albums-wrapper__item-cover"><img src="./images/albums-cover-3.png" alt="" class="albums-wrapper__item-cover-img"></div>
+                                <div class="albums-wrapper__item-title">Love Me</div>
+                                <div class="albums-wrapper__item-author">GDAD</div>
+                                <div class="albums-wrapper__item-play">Playing…</div>
+                            </div>
+                            <div class="albums-wrapper__item swiper-slide">
+                                <div class="albums-wrapper__item-cover"><img src="./images/albums-cover-1.png" alt="" class="albums-wrapper__item-cover-img"></div>
+                                <div class="albums-wrapper__item-title">Night</div>
+                                <div class="albums-wrapper__item-author">GDAD</div>
+                                <div class="albums-wrapper__item-play">Playing…</div>
+                            </div>
+                            <div class="albums-wrapper__item swiper-slide">
+                                <div class="albums-wrapper__item-cover"><img src="./images/albums-cover-2.png" alt="" class="albums-wrapper__item-cover-img"></div>
+                                <div class="albums-wrapper__item-title">No More</div>
+                                <div class="albums-wrapper__item-author">GDAD</div>
+                                <div class="albums-wrapper__item-play">Playing…</div>
+                            </div>          
+                        </div>  
+                </div>
+                <div class="albums-wrapper-prev-arrow"><img src="./images/albums-arrow-prev.svg" alt="" class="albums-wrapper-prev-arrow-img"></div>
+                <div class="albums-wrapper-next-arrow"><img src="./images/albums-arrow-next.svg" alt="" class="albums-wrapper-next-arrow-img"></div>
+            </div>   
+      </div>
+  </section>
+  <!-- / albums -->
+  <!-- player -->
+  <section class="section-player">
+      <div class="shadow-box shadow-box-top"></div>
+      <div class="section-inner">
+          <div class="albums-player">
+              <div class="albums-player-cover">
+                  <div class="albums-player-cover-icon"><img class="albums-player-cover-icon-img" src="./images/footer-logo.png" alt=""></div>
+                  <div class="albums-player-cover-title">NIGHT</div>
+                  <div class="albums-player-cover-author">GOKHAN DEMIREL</div>
+                  <div class="albums-player-cover-date">APRIL 2020</div>
+              </div>
+              <div class="albums-player-main">
+                  <div class="albums-player-main-date">APRIL 2020</div>
+                  <div class="albums-player-main-utility-wrap">
+                      <div class="albums-player-main-title">NIGHT</div>
+                      <div class="albums-player-main-platforms">
+                          <div class="albums-player-main-platforms__item"><img src="./images/player-platforms-icon-1.png" alt="" class="albums-player-main-platforms__item-img"></div>
+                          <div class="albums-player-main-platforms__item"><img src="./images/player-platforms-icon-2.png" alt="" class="albums-player-main-platforms__item-img"></div>
+                          <div class="albums-player-main-platforms__item"><img src="./images/player-platforms-icon-3.png" alt="" class="albums-player-main-platforms__item-img"></div>
+                      </div>
+                  </div>
+                  <div class="albums-player-main-tracks">
+                  </div>
+                  <div class="control">
+                      <audio class="audio" preload="metadata" src="./static/audio/Sum 41 - Never There.mp3"></audio>
+                      <div class="control-progress-wrapper">
+                          <div class="control-progress-wrapper-whole">
+                              <div class="control-progress-wrapper-current"></div>
+                          </div>
+                      </div>
+                      <div class="control-wrapper">
+                          <div class="control-wrapper-text">
+                              <div class="control-wrapper-text-play">PLAYING</div>
+                              <div class="control-wrapper-text-title">Yapma N'olursun</div>
+                          </div>
+                          <div class="control-wrapper-btns">
+                              <div class="control-wrapper-btns-prev"><img src="./images/player-prev-btn.svg" alt="" class="control-wrapper-btns-prev-img"></div>
+                              <div class="control-wrapper-btns-play"><img src="./images/player-play-btn.svg" alt="" class="control-wrapper-btns-play-img"></div>
+                              <div class="control-wrapper-btns-next"><img src="./images/player-next-btn.svg" alt="" class="control-wrapper-btns-next-img"></div>
+                          </div>
+                          <div class="control-wrapper-duration">
+                              <span class="control-wrapper-duration-current">0:00</span> / <span class="control-wrapper-duration-end">0:00</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="shadow-box shadow-box-bottom"></div>
+  </section>
+  <!-- / player -->
+  <!-- shop -->
+  <section class="section-shop">
+      <div class="section-inner">
+          <h1 class="shop-h">SHOP</h1>
+          <div class="shop-wrapper">
+              <div class="shop-wrapper__item">
+                  <div class="shop-wrapper__item-photo"><img src="./images/shop-item-1.png" alt="" class="shop-wrapper__item-photo-img"></div>
+                  <div class="shop-wrapper__item-name">DKTT COLLECTION LOGO T-SHIRT</div>
+                  <div class="shop-wrapper__item-price">€28.99</div>
+              </div>
+              <div class="shop-wrapper__item">
+                  <div class="shop-wrapper__item-photo"><img src="./images/shop-item-2.png" alt="" class="shop-wrapper__item-photo-img"></div>
+                  <div class="shop-wrapper__item-name">DKTT COLORED VINYL</div>
+                  <div class="shop-wrapper__item-price">€28.99</div>
+              </div>
+              <div class="shop-wrapper__item">
+                  <div class="shop-wrapper__item-photo"><img src="./images/shop-item-3.png" alt="" class="shop-wrapper__item-photo-img"></div>
+                  <div class="shop-wrapper__item-name">DKTT HOODIE</div>
+                  <div class="shop-wrapper__item-price">€28.99</div>
+              </div>
+              <div class="shop-wrapper__item">
+                  <div class="shop-wrapper__item-photo"><img src="./images/shop-item-4.png" alt="" class="shop-wrapper__item-photo-img"></div>
+                  <div class="shop-wrapper__item-name">DKTT T-SHIRT</div>
+                  <div class="shop-wrapper__item-price">€28.99</div>
+              </div>
+              <div class="shop-wrapper__item">
+                  <div class="shop-wrapper__item-photo"><img src="./images/shop-item-5.png" alt="" class="shop-wrapper__item-photo-img"></div>
+                  <div class="shop-wrapper__item-name">DKTT BEANIE</div>
+                  <div class="shop-wrapper__item-price">€28.99</div>
+              </div>
+              <div class="shop-wrapper__item">
+                  <div class="shop-wrapper__item-photo"><img src="./images/shop-more-arrow.svg" alt="" class="shop-wrapper__item-arrow-img"></div>
+                  <div class="shop-wrapper__item-store">OFFICIAL WEBSTORE</div>
+              </div>
+          </div>
+      </div>
+  </section>    
+  <!-- / shop -->
+  <!-- video -->
+  <section class="section-video">
+      <div class="section-inner">
+        <h1 class="video-h">VIDEOS</h1>
+        <div class="arrows-wrapper">
+            <div class="video-swiper">
+                <div class="swiper-wrapper video-swiper-wrapper">
+                    <div class="video-wrapper swiper-slide">
+                        <iframe type="text/html" width="100%" height="100%" src="https://www.youtube.com/embed/eQEY1gPeZgk?si=WzI61BjVuHDfqGCq" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-wrapper swiper-slide">
+                        <iframe type="text/html" width="100%" height="100%" src="https://www.youtube.com/embed/tQDLTeGanYE?si=1ySPfssqrmtNHL60" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-wrapper swiper-slide">
+                        <iframe type="text/html" width="100%" height="100%" src="https://www.youtube.com/embed/mot2n6ikQLw?si=EaUrVvkGjDwyBGL3" frameborder="0" allowfullscreen></iframe>
+                    </div>
+            </div>
+            <div class="video-wrapper-prev-arrow"><img src="./images/albums-arrow-prev.svg" alt="" class="video-wrapper-left-arrow-img"></div>
+            <div class="video-wrapper-next-arrow"><img src="./images/albums-arrow-next.svg" alt="" class="video-wrapper-right-arrow-img"></div>
+        </div>    
+      </div>
+  </section>
+  <!-- / video -->
+  <!-- gallery -->
+  <section class="section-gallery">
+      <div class="section-inner section-inner-large">
+          <h1 class="gallery-h">SLIDE GALLERY</h1>
+          <div class="gallery-swiper">
+            <div class="gallery-wrapper swiper-wrapper">
+                <a class="gallery-wrapper__item swiper-slide" data-fslightbox href="./images/gallery-pic-1.png"><img src="./images/gallery-pic-1.png" alt="" class="gallery-wrapper__item-img"></a>
+                <a class="gallery-wrapper__item swiper-slide" data-fslightbox href="./images/gallery-pic-2.png"><img src="./images/gallery-pic-2.png" alt="" class="gallery-wrapper__item-img"></a>
+                <a class="gallery-wrapper__item swiper-slide" data-fslightbox href="./images/gallery-pic-3.png"><img src="./images/gallery-pic-3.png" alt="" class="gallery-wrapper__item-img"></a>
+                <a class="gallery-wrapper__item swiper-slide" data-fslightbox href="./images/gallery-pic-4.png"><img src="./images/gallery-pic-4.png" alt="" class="gallery-wrapper__item-img"></a>
+                <a class="gallery-wrapper__item swiper-slide" data-fslightbox href="./images/gallery-pic-5.png"><img src="./images/gallery-pic-5.png" alt="" class="gallery-wrapper__item-img"></a>
+                <a class="gallery-wrapper__item swiper-slide" data-fslightbox href="./images/gallery-pic-6.png"><img src="./images/gallery-pic-6.png" alt="" class="gallery-wrapper__item-img"></a>
+            </div>     
+          </div> 
+      </div>
+  </section>
+  <!-- / gallery -->
+  <!-- footer -->
+  <footer class="section-footer">
+      <div class="shadow-box shadow-box-top"></div>
+      <div class="footer-logo"><img src="./images/footer-logo.png" alt="" class="footer-logo-img"></div>
+      <div class="email">info@albums.com</div>
+      <div class="socials">
+          <div class="socials__item">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2273 0C7.44971 0 7.10143 0.0115116 6.01058 0.0601777C4.92201 0.108725 4.17855 0.277786 3.52802 0.525007C2.85549 0.780524 2.28514 1.12246 1.71653 1.67839C1.14797 2.23436 0.798263 2.79203 0.536939 3.44962C0.284099 4.08569 0.111196 4.81263 0.0615454 5.87701C0.0117732 6.94362 0 7.28416 0 10C0 12.7158 0.0117732 13.0564 0.0615454 14.123C0.111196 15.1874 0.284099 15.9143 0.536939 16.5504C0.798263 17.208 1.14797 17.7656 1.71653 18.3216C2.28514 18.8775 2.85549 19.2195 3.52802 19.475C4.17855 19.7222 4.92201 19.8913 6.01058 19.9398C7.10143 19.9885 7.44971 20 10.2273 20C13.0048 20 13.3531 19.9885 14.444 19.9398C15.5325 19.8913 16.276 19.7222 16.9265 19.475C17.5991 19.2195 18.1694 18.8775 18.738 18.3216C19.3066 17.7656 19.6563 17.208 19.9176 16.5504C20.1704 15.9143 20.3433 15.1874 20.393 14.123C20.4428 13.0564 20.4545 12.7158 20.4545 10C20.4545 7.28416 20.4428 6.94362 20.393 5.87701C20.3433 4.81263 20.1704 4.08569 19.9176 3.44962C19.6563 2.79203 19.3066 2.23436 18.738 1.67839C18.1694 1.12246 17.5991 0.780524 16.9265 0.525007C16.276 0.277786 15.5325 0.108725 14.444 0.0601777C13.3531 0.0115116 13.0048 0 10.2273 0ZM10.2273 1.8018C12.9581 1.8018 13.2815 1.812 14.36 1.86011C15.3571 1.90457 15.8986 2.06748 16.259 2.20443C16.7364 2.38583 17.0771 2.60253 17.435 2.95248C17.7929 3.30239 18.0145 3.63551 18.2 4.10229C18.3401 4.45466 18.5067 4.98415 18.5522 5.95914C18.6014 7.0136 18.6118 7.32989 18.6118 10C18.6118 12.6701 18.6014 12.9864 18.5522 14.0409C18.5067 15.0158 18.3401 15.5453 18.2 15.8977C18.0145 16.3645 17.7929 16.6976 17.435 17.0475C17.0771 17.3975 16.7364 17.6142 16.259 17.7956C15.8986 17.9325 15.3571 18.0954 14.36 18.1399C13.2817 18.188 12.9583 18.1982 10.2273 18.1982C7.49628 18.1982 7.17288 18.188 6.09458 18.1399C5.09743 18.0954 4.5559 17.9325 4.19552 17.7956C3.71814 17.6142 3.37745 17.3975 3.01958 17.0475C2.66172 16.6976 2.44006 16.3645 2.25453 15.8977C2.11447 15.5453 1.94785 15.0158 1.90239 14.0409C1.85318 12.9864 1.84275 12.6701 1.84275 10C1.84275 7.32989 1.85318 7.0136 1.90239 5.95914C1.94785 4.98415 2.11447 4.45466 2.25453 4.10229C2.44006 3.63551 2.66168 3.30239 3.01958 2.95248C3.37745 2.60253 3.71814 2.38583 4.19552 2.20443C4.5559 2.06748 5.09743 1.90457 6.09458 1.86011C7.173 1.812 7.49648 1.8018 10.2273 1.8018ZM4.97543 10C4.97543 7.16393 7.32674 4.86487 10.2273 4.86487C13.1278 4.86487 15.4791 7.16393 15.4791 10C15.4791 12.8361 13.1278 15.1351 10.2273 15.1351C7.32674 15.1351 4.97543 12.8361 4.97543 10ZM10.2273 13.3333C8.34447 13.3333 6.81818 11.841 6.81818 10C6.81818 8.15904 8.34447 6.66667 10.2273 6.66667C12.1101 6.66667 13.6364 8.15904 13.6364 10C13.6364 11.841 12.1101 13.3333 10.2273 13.3333ZM15.6866 5.86197C16.3644 5.86197 16.9139 5.32474 16.9139 4.66199C16.9139 3.99924 16.3644 3.46197 15.6866 3.46197C15.0088 3.46197 14.4594 3.99924 14.4594 4.66199C14.4594 5.32474 15.0088 5.86197 15.6866 5.86197Z" fill="white"/>
+              </svg>
+          </div>
+          <div class="socials__item">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4708 20H1.67434C1.05067 20 0.54541 19.5057 0.54541 18.8961V1.10384C0.54541 0.494104 1.05075 0 1.67434 0H19.8711C20.4945 0 21 0.494104 21 1.10384V18.8961C21 19.5057 20.4945 20 19.8711 20H14.6588V12.2549H17.3175L17.7156 9.23649H14.6588V7.30943C14.6588 6.43554 14.9069 5.84 16.1886 5.84L17.8232 5.83931V3.13962C17.5405 3.10284 16.5702 3.02065 15.4412 3.02065C13.0844 3.02065 11.4708 4.4273 11.4708 7.0105V9.23649H8.80526V12.2549H11.4708V20V20Z" fill="white"/>
+              </svg>
+          </div>
+          <div class="socials__item">
+              <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.95049 0.321833C3.95049 0.321833 7.37353 0 13.9783 0C20.583 0 23.7173 0.321833 23.7173 0.321833C23.7173 0.321833 26.1197 0.406639 27.0587 2.2293C27.0587 2.2293 27.9977 3.55182 27.9977 10C27.9977 10 28.0542 13.9919 27.6093 16.1141C27.1643 18.2363 26.1818 18.8561 26.1818 18.8561C26.1818 18.8561 25.5515 19.4759 24.1611 19.6449C22.7708 19.8139 18.2624 20 13.9783 20C13.9783 20 6.13547 19.9955 3.49373 19.5531C0.851982 19.1108 0.480864 16.6115 0.480864 16.6115C0.480864 16.6115 -0.60108 10.2848 0.480864 3.39556C0.480864 3.39556 0.794022 0.643733 3.95049 0.321833V0.321833ZM18.8293 9.84375L11.0168 13.6899V5.9976L18.8293 9.84375Z" fill="white"/>
+              </svg>
+          </div>
+      </div>
+  </footer>
+  <!-- / footer -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet"> 
+</body>
+</html>

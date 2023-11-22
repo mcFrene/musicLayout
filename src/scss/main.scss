@@ -1,0 +1,800 @@
+@import './config/vars';
+@import './config/mixins';
+@import './config/normalize';
+@import './config/common';
+
+@import './libs/swiper-bundle';
+
+// === HEADER ===
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 15;
+    text-transform: none;
+    background-color: $color-primary-900;
+
+    .section-inner {
+        display: flex;
+        padding: 44px 0;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+
+        &__link {
+            font-size: $fs-xs;
+            color: $color-primary-50;
+            text-decoration: none;
+
+            &:not(:last-child) {
+                margin-right: 58px;
+            }
+
+            &:hover {
+                color: darken($color-primary-50, 20%);
+                transition: $transition;
+            }
+        }
+    }
+
+    .header-socials {
+        margin-left: auto;
+    }
+}
+
+// === / HEADER ===
+
+// === HERO ===
+
+.section-hero {
+    position: relative;
+    padding-top: 320px;
+    background: url('../images/hero-bg.png') no-repeat 50% 50%;
+    background-size: cover;
+
+    &::before {
+        @include image-filter($color-primary-900, 0.7);
+    }
+
+    .logo {
+        position: relative;
+        z-index: 5;
+        text-align: center;
+    }
+
+    .scroll-down {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        background: linear-gradient(transparent, $color-primary-900);
+
+        &-btn {
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+    }
+}
+
+// === / HERO ===
+
+// === LAST ALBUM ===
+
+.section-last-album {
+    position: relative;
+    padding: 140px 0;
+    background: $color-primary-900;
+
+    &::before {
+        @include image-filter(none, 0.2);
+
+        background: url('../images/last-album-bg.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    &::after {
+        @include image-filter(none, 1);
+
+        background: url('../images/abstract-background.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .section-inner {
+        padding: 0;
+
+        &::before {
+            @include image-filter($color-primary-900, 0.3);
+        }
+    }
+
+    .album-wrapper {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+
+        &-cover {
+            flex-basis: 40%;
+            margin-right: 94px;
+
+            &-img {
+                @include img-size;
+            }
+        }
+
+        &-info {
+            flex-basis: 60%;
+            color: $color-primary-50;
+
+            &-h {
+                margin-top: 82px;
+                font-size: $fs-tiny;
+                font-style: normal;
+                font-weight: $fw-regular;
+                color: $color-secondary;
+                letter-spacing: 2px;
+            }
+
+            &-name {
+                margin-top: 4px;
+                font-size: $fs-xl;
+            }
+
+            &-author {
+                font-size: $fs-tiny;
+                font-style: normal;
+                font-weight: $fw-light;
+                letter-spacing: 2px;
+            }
+
+            &-description {
+                width: 70%;
+                margin-top: 60px;
+                font-size: $fs-tiny;
+                font-style: normal;
+                line-height: 2;
+            }
+
+            &-platforms {
+                display: flex;
+                margin-top: 40px;
+
+                &__item {
+                    cursor: pointer;
+                }
+
+                &__item:not(:last-child) {
+                    margin-right: 14px;
+                }
+            }
+        }
+    }
+}
+
+// === / LAST ALBUM ===
+
+// === CONCERTS ===
+
+.section-concerts {
+    position: relative;
+    background-color: $color-primary-900;
+
+    &::after {
+        @include image-filter(none, 1);
+
+        background: url('../images/abstract-background.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .concerts-logo {
+        text-align: right;
+    }
+
+    .concerts-wrapper {
+        color: $color-primary-50;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            padding: 40px 0;
+            border-top: solid 2px $color-primary-300;
+
+            &:last-child {
+                border-bottom: solid 2px $color-primary-300;
+            }
+
+            &-date {
+                flex-basis: 4%;
+                margin-right: 30px;
+
+                &-day {
+                    font-size: $fs-l;
+                    text-align: center;
+                }
+
+                &-month {
+                    font-size: $fs-xxs;
+                    text-align: center;
+                }
+            }
+
+            &-cover {
+                flex-basis: 6%;
+                margin-right: 25px;
+            }
+
+            &-place {
+                flex-basis: 17%;
+                margin-right: 128px;
+
+                &-ivent {
+                    font-size: $fs-s;
+                }
+
+                &-arena {
+                    font-size: $fs-xxs;
+                    font-style: normal;
+                    font-weight: $fw-regular;
+                    color: $color-primary-300;
+                    text-transform: none;
+                }
+            }
+
+            &-location {
+                display: flex;
+                flex-basis: 13%;
+                align-items: center;
+                margin-right: 190px;
+                text-transform: none;
+
+                &-text {
+                    display: inline;
+                    margin-left: 10px;
+                    font-size: $fs-semi-tiny;
+                    font-style: normal;
+                    font-weight: $fw-regular;
+                    color: $color-primary-300;
+                }
+            }
+
+            &-time {
+                display: flex;
+                flex-basis: 9%;
+                align-items: center;
+                margin-right: 140px;
+
+                &-text {
+                    display: inline;
+                    margin-left: 10px;
+                    font-size: $fs-semi-tiny;
+                    font-style: normal;
+                    font-weight: $fw-regular;
+                    color: $color-primary-300;
+                }
+            }
+
+            &-ticket {
+                padding: 15px 55px;
+                color: $color-primary-50;
+                text-decoration: none;
+                background-color: $color-primary-900;
+                border: 1px solid $color-secondary;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+// === / CONCERTS ===
+
+// === ALBUMS ===
+
+.section-albums {
+    position: relative;
+    color: $color-primary-50;
+    background-color: $color-primary-900;
+
+    &::after {
+        @include image-filter(none, 1);
+
+        background: url('../images/abstract-background.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .albums-h {
+        margin-bottom: 100px;
+    }
+
+    .albums-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            flex-shrink: 0;
+
+            &-cover {
+                margin-bottom: 32px;
+                cursor: pointer;
+
+                &-img {
+                    @include img-size;
+                }
+            }
+
+            &-title,
+            &-author,
+            &-play {
+                text-align: center;
+            }
+
+            &-title {
+                position: relative;
+                z-index: 5;
+                margin-bottom: 10px;
+                font-size: $fs-s;
+                text-transform: none;
+            }
+
+            &-author {
+                position: relative;
+                z-index: 5;
+                margin-bottom: 10px;
+                font-size: $fs-xxs;
+                font-style: normal;
+                font-weight: $fw-regular;
+                color: $color-primary-300;
+            }
+
+            &-play {
+                position: relative;
+                z-index: 5;
+                display: none;
+                font-size: $fs-xxs;
+                font-style: normal;
+                font-weight: $fw-regular;
+                color: $color-secondary;
+                text-transform: none;
+            }
+
+            &--active {
+                position: relative;
+
+                .albums-wrapper__item-play {
+                    display: block;
+                }
+
+                &::before {
+                    @include image-filter($color-primary-900, 0.4);
+                }
+            }
+        }
+
+        &-prev-arrow,
+        &-next-arrow {
+            position: absolute;
+            top: 38%;
+            cursor: pointer;
+        }
+
+        &-prev-arrow {
+            left: -5%;
+        }
+
+        &-next-arrow {
+            right: -5%;
+        }
+    }
+}
+
+.albums-swiper {
+    position: relative;
+    overflow: hidden;
+}
+
+// === / ALBUMS ===
+
+// === PLAYER ===
+
+.section-player {
+    position: relative;
+    color: $color-primary-50;
+    background: $color-primary-900;
+
+    &::before {
+        @include image-filter(none, 0.2);
+
+        background: url('../images/player-bg.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    &::after {
+        @include image-filter(none, 1);
+
+        background: url('../images/abstract-background.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .albums-player {
+        display: flex;
+
+        &-cover {
+            position: relative;
+            display: flex;
+            flex-basis: 40%;
+            flex-direction: column;
+            background: url('../images/player-cover.png') no-repeat 50% 50%;
+            background-size: cover;
+
+            &::before {
+                @include image-filter($color-primary-900, 0.6);
+            }
+
+            &-icon,
+            &-title,
+            &-author,
+            &-date {
+                position: relative;
+                z-index: 5;
+                text-align: center;
+                cursor: default;
+            }
+
+            &-icon {
+                margin: 30px 0 150px;
+            }
+
+            &-title {
+                margin-bottom: 10px;
+                font-size: $fs-xxl;
+            }
+
+            &-author {
+                flex-grow: 1;
+                margin-bottom: 180px;
+                font-size: $fs-tiny;
+                font-weight: $fw-light;
+                letter-spacing: 2px;
+            }
+
+            &-date {
+                margin-bottom: 70px; // delete later
+                font-size: $fs-xxs;
+            }
+        }
+
+        &-main {
+            flex-basis: 60%;
+            background-color: $color-primary-900;
+
+            &-date {
+                padding: 0 50px;
+                margin: 60px 0 4px;
+                font-size: $fs-xxs;
+                color: $color-secondary;
+                letter-spacing: 2px;
+            }
+
+            &-utility-wrap {
+                display: flex;
+                align-items: flex-end;
+                padding: 0 50px;
+                margin-bottom: 50px;
+            }
+
+            &-title {
+                font-size: $fs-m;
+            }
+
+            &-platforms {
+                display: flex;
+                margin-left: auto;
+
+                &__item {
+                    margin: 0 12px;
+                    cursor: pointer;
+                }
+            }
+
+            &-tracks {
+                padding: 0 50px;
+                color: $color-primary-300;
+
+                &__item {
+                    display: flex;
+                    padding: 20px 0;
+                    cursor: pointer;
+
+                    &-play {
+                        margin-right: 20px;
+                    }
+
+                    &-title {
+                        font-size: $fs-xxs;
+                        text-transform: none;
+                    }
+
+                    &-duration {
+                        margin-left: auto;
+                        font-style: normal;
+                        font-weight: $fw-bold;
+                    }
+
+                    &:hover {
+                        color: $color-primary-50;
+                        transition: $transition;
+
+                        path {
+                            fill: $color-primary-50;
+                            transition: $transition;
+                        }
+                    }
+                }
+            }
+
+            .play-now {
+                color: $color-primary-50;
+            }
+        }
+    }
+}
+
+.control {
+    margin-top: 50px;
+
+    &-progress-wrapper {
+        padding: 10px 0;
+        cursor: pointer;
+
+        &-whole {
+            height: 2px;
+            background-color: $color-primary-500;
+        }
+
+        &-current {
+            width: 0%;
+            height: 2px;
+            background-color: $color-secondary;
+        }
+    }
+
+    &-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 40px;
+
+        &-text {
+            &-play {
+                margin-bottom: 6px;
+                font-size: $fs-tiny;
+                color: $color-secondary;
+                letter-spacing: 2px;
+            }
+
+            &-title {
+                font-size: $fs-xs;
+                text-transform: none;
+            }
+        }
+
+        &-btns {
+            position: absolute;
+            left: 50%;
+            display: flex;
+            align-items: center;
+            transform: translateX(-50%);
+
+            &-prev,
+            &-play,
+            &-next {
+                cursor: pointer;
+            }
+
+            &-play {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                margin: 0 35px;
+                background-color: $color-secondary;
+                border-radius: 100%;
+
+                &:hover {
+                    background-color: lighten($color-secondary, 5%);
+                }
+            }
+        }
+
+        &-duration {
+            font-size: $fs-xxs;
+            font-style: normal;
+            font-weight: $fw-bold;
+
+            &-end {
+                color: $color-primary-300;
+            }
+        }
+    }
+}
+
+// === / PLAYER ===
+
+// === SHOP ===
+
+.section-shop {
+    position: relative;
+    background: $color-primary-900;
+
+    &::after {
+        @include image-filter(none, 1);
+
+        background: url('../images/abstract-background.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .shop-h {
+        margin-bottom: 80px;
+    }
+
+    .shop-wrapper {
+        position: relative;
+        z-index: 5;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px 134px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px 30px;
+            text-align: center;
+            cursor: pointer;
+            background-color: $color-primary-50;
+
+            &-photo {
+                display: flex;
+                flex-grow: 1;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &-name {
+                margin-bottom: 8px;
+                font-size: $fs-xs;
+                color: $color-primary-500;
+            }
+
+            &-price {
+                font-size: $fs-m;
+                color: $color-primary-900;
+            }
+
+            &-store {
+                font-size: $fs-pre-xl;
+            }
+        }
+    }
+}
+
+// === / SHOP ===
+
+// === VIDEO ===
+
+.section-video {
+    position: relative;
+    background-color: $color-primary-900;
+
+    &::after {
+        @include image-filter(none, 1);
+
+        background: url('../images/abstract-background.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .video-h {
+        margin-bottom: 80px;
+    }
+
+    .video-wrapper {
+        position: relative;
+        z-index: 5;
+        height: 800px;
+        flex-shrink: 0;
+
+        &-prev-arrow,
+        &-next-arrow {
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            transform: translateY(-50%);
+        }
+
+        &-prev-arrow {
+            left: -5%;
+        }
+
+        &-next-arrow {
+            right: -5%;
+        }
+    }
+}
+
+.video-swiper {
+    overflow: hidden;
+
+    &-wrapper {
+        display: flex;
+    }
+}
+
+// === / VIDEO ===
+
+// === / GALLERY ===
+
+.section-gallery {
+    position: relative;
+    background-color: $color-primary-900;
+
+    &::after {
+        @include image-filter(none, 1);
+
+        background: url('../images/abstract-background.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .gallery-h {
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .gallery-wrapper {
+        position: relative;
+        z-index: 5;
+        display: flex;
+
+        &__item {
+            cursor: pointer;
+            width: max-content;
+        }
+    }
+}
+
+.gallery-swiper {
+    overflow: hidden;
+}
+
+// === / GALLERY ===
+
+// === / FOOTER ===
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    color: $color-primary-50;
+    background-color: $color-primary-800;
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+    .email {
+        margin-bottom: 40px;
+    }
+}
+
+// === / FOOTER ===
