@@ -1,0 +1,3 @@
+@function linear-size($minScreen, $maxScreen, $minSize, $maxSize){
+    @return calc($minSize + ($maxSize - $minSize) / ($maxScreen - $minScreen) * (100vw - $minScreen))
+}

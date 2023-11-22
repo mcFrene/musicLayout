@@ -1,3 +1,5 @@
+@import './config/functions';
+
 body {
     font-family: Roboto, sans-serif;
     font-style: italic;
@@ -15,6 +17,18 @@ body {
     &-large {
         width: 100vw;
         max-width: none;
+    }
+
+    @media(max-width: $breakpoint-xl-max){
+        padding: 60px 20px;
+    }
+
+    @media(max-width: $breakpoint-md-max){
+        padding: 100px 20px;
+    }
+
+    @media(max-width: $breakpoint-xs-max){
+        padding: 60px 20px;
     }
 }
 
@@ -40,8 +54,22 @@ body {
 h1 {
     padding: 0;
     margin: 0;
+    margin-bottom: 100px;
     font-size: $fs-xxl;
     color: $color-primary-50;
+
+    @media(max-width: $breakpoint-md-max){
+        margin-bottom: 80px;
+    }
+    
+    @media(max-width: $breakpoint-sm-max){
+        margin-bottom: 60px;
+        font-size: linear-size(360px, $breakpoint-sm-max, 44px, $fs-xxl);
+    }
+
+    @media(max-width: $breakpoint-xs-max){
+        margin-bottom: 40px;
+    }
 }
 
 .shadow-box {
@@ -59,8 +87,22 @@ h1 {
         bottom: 0;
         background: linear-gradient(transparent, $color-primary-900);
     }
+
+    @media(max-width: $breakpoint-md-max){
+        height: 200px;
+    }
+    
+    @media(max-width: $breakpoint-sm-max){
+        height: 160px;
+    }
+
+    @media(max-width: $breakpoint-xs-max){
+        height: 120px;
+    }
 }
 
 .arrows-wrapper {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
